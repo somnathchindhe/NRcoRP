@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jsmol</title>
+    <script src="jmol-16.1.35/jsmol/JSmol.min.js"></script>
+    <script src="jmol-16.1.35/jsmol/js/Jmol2.js"></script>
+    <script>
+        jmolInitialize("/jmol-16.1.35/jsmol");
+    </script>
+</head>
+<body>
+    <h1>Protein Visualization</h1>
+    <div id="jmolAppletContainer">
+
+        <script>
+            <applet code="JmolApplet" archive="JmolApplet.jar"
+	width="350" height="350">
+	<param name="load" value="3f5c.pdb">
+	</applet>
+	
+        
+        </script>
+    </div>
+</body>
+</html>
+

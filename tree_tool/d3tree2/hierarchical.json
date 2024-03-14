@@ -1,0 +1,1720 @@
+{
+  "name": "root",
+  "children": [
+    {
+      "name": "ENDOCRINE RECEPTOR",
+      "children": [
+        {
+          "name": "THR",
+          "children": [
+            {
+              "name": "TR-α1",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "TR-α2",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "TR-β",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "TR-β1",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "RAR",
+          "children": [
+            {
+              "name": "RARɑ",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "VDR",
+          "children": [
+            {
+              "name": "VDR",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": " ER",
+          "children": [
+            {
+              "name": "ERɑ",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "ERβ",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GR",
+          "children": [
+            {
+              "name": "GR",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MR",
+          "children": [
+            {
+              "name": "MR",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PGR",
+          "children": [
+            {
+              "name": "PR-B",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AR",
+          "children": [
+            {
+              "name": "AR",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Adopted orphan receptor",
+      "children": [
+        {
+          "name": "PPAR",
+          "children": [
+            {
+              "name": "PPARɑ",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "PPARy2",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                },
+                                {
+                                  "name": "1",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "PPARy",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "PPARy1",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "PPARβ\\δ",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "1",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": " Rev-erb",
+          "children": [
+            {
+              "name": "Rev-erbɑ",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "1",
+                                  "children": []
+                                },
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Rev-erbβ",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": " LXR",
+          "children": [
+            {
+              "name": "LXRɑ",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "LXRβ",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "FXR",
+          "children": [
+            {
+              "name": "FXR",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "PXR",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "RXR",
+          "children": [
+            {
+              "name": "RXRɑ",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "RXRβ",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "RXRy",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ORPHAN N.R ",
+      "children": [
+        {
+          "name": "NURR1",
+          "children": [
+            {
+              "name": "NURR1",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NGF1B/NUR77",
+          "children": [
+            {
+              "name": "NGF1B/NUR77",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NOR1",
+          "children": [
+            {
+              "name": "NOR1",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SF1",
+          "children": [
+            {
+              "name": "SF1",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "LRH-1",
+          "children": [
+            {
+              "name": "LRH-1",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GCNF",
+          "children": [
+            {
+              "name": "GCNF",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DAX",
+          "children": [
+            {
+              "name": "DAX-1",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SHP",
+          "children": [
+            {
+              "name": "SHP",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ERR ",
+          "children": [
+            {
+              "name": "ERR ɑ",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "ERR ɑ-1",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "TR",
+          "children": [
+            {
+              "name": "TR2",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "TR4",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": " TLX",
+          "children": [
+            {
+              "name": "TLX",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PNR",
+          "children": [
+            {
+              "name": "PNR",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "COUP",
+          "children": [
+            {
+              "name": "COUP-TFI",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "COUP-TFII",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "EAR",
+          "children": [
+            {
+              "name": "EAR-2",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HNF ",
+          "children": [
+            {
+              "name": "HNF4ɑ",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "HNF4ɑ.",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ROR",
+          "children": [
+            {
+              "name": "ROR-ɑ",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "ROR-ɑ4",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "ROR-ɑ1",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "ROR-β",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "RORy",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "RORyt",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "",
+      "children": [
+        {
+          "name": "",
+          "children": [
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": " ",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Tree Tool</title>
+
+    <style>
+	
+	.node {
+		cursor: pointer;
+	}
+
+	.node circle {
+	  fill: #c23333;
+	  stroke: steelblue;
+	  stroke-width: 3px;
+	}
+
+	.node text {
+	  font: 15px sans-serif;
+	}
+
+	.link {
+	  fill: none;
+	  stroke: #ccc;
+	  stroke-width: 2.5px;
+	}
+	
+    </style>
+
+  </head>
+
+  <body>
+
+<!-- Load the d3.js library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+
+<!-- Load your JSON data -->
+<script src="./new_sampletree.json" type="application/json" id="treeData"></script>
+
+<script>
+// Get the JSON data from the script tag
+var treeData = [
+{
+  "name": "Nuclear Receptors",
+  "children": [
+    {
+      "name": "Adopted orphan",
+      "children": [
+        {
+          "name": "FXR",
+          "children": [
+            { "name": "FXR" },
+            { "name": "PXR" }
+          ]
+        },
+        {
+          "name": "LXR",
+          "children": [
+            { "name": "LXRɑ" },
+            { "name": "LXRβ" }
+          ]
+        },
+        {
+          "name": "PPAR",
+          "children": [
+            { "name": "PPARɑ" },
+            { "name": "PPARy" },
+            { "name": "PPARy1" },
+            { "name": "PPARy2" },
+            { "name": "PPARβ/δ" }
+          ]
+        },
+        {
+          "name": "Rev-erb",
+          "children": [
+            { "name": "Rev-erbɑ" },
+            { "name": "Rev-erbβ" }
+          ]
+        },
+        {
+          "name": "RXR",
+          "children": [
+            { "name": "RXRɑ" },
+            { "name": "RXRy" },
+            { "name": "RXRβ" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Endocrine",
+      "children": [
+        {
+          "name": "AR"
+        },
+        {
+          "name": "ER",
+          "children": [
+            { "name": "ERɑ" },
+            { "name": "ERβ" }
+          ]
+        },
+        {
+          "name": "GR"
+        },
+        {
+          "name": "MR"
+        },
+        {
+          "name": "PGR",
+          "children": [
+            { "name": "PR-B" }
+          ]
+        },
+        {
+          "name": "RAR",
+          "children": [
+            { "name": "RARɑ" }
+          ]
+        },
+        {
+          "name": "THR",
+          "children": [
+            { "name": "TR-α1" },
+            { "name": "TR-α2" },
+            { "name": "TR-β" },
+            { "name": "TR-β1" }
+          ]
+        },
+        {
+          "name": "VDR"
+        }
+      ]
+    },
+    {
+      "name": "Orphan",
+      "children": [
+        {
+          "name": "COUP",
+          "children": [
+            { "name": "COUP-TFI" },
+            { "name": "COUP-TFII" }
+          ]
+        },
+        {
+          "name": "DAX",
+          "children": [
+            { "name": "DAX-1" }
+          ]
+        },
+        {
+          "name": "EAR",
+          "children": [
+            { "name": "EAR-2" }
+          ]
+        },
+        {
+          "name": "ERR",
+          "children": [
+            { "name": "ERRɑ" },
+            { "name": "ERRɑ-1" }
+          ]
+        },
+        {
+          "name": "GCNF"
+        },
+        {
+          "name": "HNF",
+          "children": [
+            { "name": "HNF4ɑ" },
+            { "name": "HNF4ɑ" }
+          ]
+        },
+        {
+          "name": "LRH-1",
+          "children": [
+            { "name": "LRH-1" }
+          ]
+        },
+        {
+          "name": "NGF1B/NUR77",
+          "children": [
+            { "name": "NGF1B/NUR77" }
+          ]
+        },
+        {
+          "name": "NOR1",
+          "children": [
+            { "name": "NOR1" }
+          ]
+        },
+        {
+          "name": "NURR1",
+          "children": [
+            { "name": "NURR1" }
+          ]
+        },
+        {
+          "name": "PNR",
+          "children": [
+            { "name": "PNR" }
+          ]
+        },
+        {
+          "name": "ROR",
+          "children": [
+            { "name": "ROR-ɑ" },
+            { "name": "ROR-ɑ1" },
+            { "name": "ROR-ɑ4" },
+            { "name": "RORy" },
+            { "name": "RORyt" },
+            { "name": "ROR-β" }
+          ]
+        },
+        {
+          "name": "SF1",
+          "children": [
+            { "name": "SF1" }
+          ]
+        },
+        {
+          "name": "SHP",
+          "children": [
+            { "name": "SHP" }
+          ]
+        },
+        {
+          "name": "TLX",
+          "children": [
+            { "name": "TLX" }
+          ]
+        },
+        {
+          "name": "TR",
+          "children": [
+            { "name": "TR2" },
+            { "name": "TR4" }
+          ]
+        }
+      ]
+    }
+  ]
+}
+];
+
+// ************** Generate the tree diagram	 *****************
+var margin = {top: 20, right: 20, bottom: 20, left: 20},
+      width = window.innerWidth - margin.right - margin.left,
+      height = window.innerHeight - margin.top - margin.bottom;
+	
+	
+var i = 0,
+	duration = 750,
+	root;
+
+var tree = d3.layout.tree()
+	.size([height, width]);
+
+
+var diagonal = d3.svg.diagonal()
+	.projection(function(d) { return [d.y, d.x]; });
+
+var svg = d3.select("body").append("svg")
+	.attr("width", window.innerWidth  + margin.right + margin.left)
+	.attr("height",  window.innerHeight  + margin.top + margin.bottom)
+  .append("g")
+  .attr("transform", "translate(" + (width /4) + "," + margin.top + ")");
+
+root = treeData[0];
+root.x0 = height / 2;
+root.y0 = 0;
+
+///root collapse
+function collapseLevels(node, level) {
+  if (node.children && level <= 3) {
+    node._children = node.children;
+    node.children = null;
+    if (node._children) {
+      node._children.forEach(function(child) {
+        collapseLevels(child, level + 1);
+      });
+    }
+  }
+}
+
+// Call the function on the root node to collapse levels
+collapseLevels(root, 1);
+
+update(root);
+d3.select(self.frameElement).style("height", "500px");
+
+function update(source) {
+
+  // Compute the new tree layout.
+  var nodes = tree.nodes(root).reverse(),
+	  links = tree.links(nodes);
+
+  // Normalize for fixed-depth.
+  nodes.forEach(function(d) { d.y = d.depth * 200; });
+
+  // Update the nodes…
+  var node = svg.selectAll("g.node")
+	  .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+  // Enter any new nodes at the parent's previous position.
+  var nodeEnter = node.enter().append("g")
+	  .attr("class", "node")
+	  .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+	  .on("click", click);
+
+  nodeEnter.append("circle")
+	  .attr("r", 1e-6)
+	  .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+  nodeEnter.append("text")
+	  .attr("x", function(d) { return d.children || d._children ? -13 : 13; })
+	  .attr("dy", ".35em")
+	  .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+	  .text(function(d) { return d.name; })
+	  .style("fill-opacity", 1e-6);
+
+  // Transition nodes to their new position.
+  var nodeUpdate = node.transition()
+	  .duration(duration)
+	  .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+
+  nodeUpdate.select("circle")
+	  .attr("r", 10)
+	  .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+  nodeUpdate.select("text")
+	  .style("fill-opacity", 1);
+
+  // Transition exiting nodes to the parent's new position.
+  var nodeExit = node.exit().transition()
+	  .duration(duration)
+	  .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+	  .remove();
+
+  nodeExit.select("circle")
+	  .attr("r", 1e-6);
+
+  nodeExit.select("text")
+	  .style("fill-opacity", 1e-6);
+
+  // Update the links…
+  var link = svg.selectAll("path.link")
+	  .data(links, function(d) { return d.target.id; });
+
+  // Enter any new links at the parent's previous position.
+  link.enter().insert("path", "g")
+	  .attr("class", "link")
+	  .attr("d", function(d) {
+		var o = {x: source.x0, y: source.y0};
+		return diagonal({source: o, target: o});
+	  });
+
+  // Transition links to their new position.
+  link.transition()
+	  .duration(duration)
+	  .attr("d", diagonal);
+
+  // Transition exiting nodes to the parent's new position.
+  link.exit().transition()
+	  .duration(duration)
+	  .attr("d", function(d) {
+		var o = {x: source.x, y: source.y};
+		return diagonal({source: o, target: o});
+	  })
+	  .remove();
+
+  // Stash the old positions for transition.
+  nodes.forEach(function(d) {
+	d.x0 = d.x;
+	d.y0 = d.y;
+  });
+}
+
+
+
+// Toggle children on click.
+function click(d) {
+  if (d.children) {
+	d._children = d.children;
+	d.children = null;
+  } else {
+	d.children = d._children;
+	d._children = null;
+  }
+  update(d);
+}
+
+function click(d) {
+  if (d.children) {
+    d._children = d.children;
+    d.children = null;
+  } else {
+    d.children = d._children;
+    d._children = null;
+  }
+  update(d);
+}
+</script>
+	
+  </body>
+</html>
+

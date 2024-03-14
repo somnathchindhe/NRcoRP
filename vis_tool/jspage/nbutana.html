@@ -1,0 +1,83 @@
+<!DOCTYPE HTML5>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport">
+    <title>Title of the web page</title>
+    <script src="../jmol-16.1.35/jsmol/JSmol.min.js"></script>
+    <script src="../jmol-16.1.35/jsmol/js/Jmol2.js"></script>
+    <script>jmolInitialize("../jmol-16.1.35/jsmol");</script>
+   <style></style>
+  </head>
+  <body>
+    <div class="wrapper res-wrapper">
+      <div class="main-panel">
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="res-card">
+                  <div class="res-card-header">
+                    <div>
+                      <h3 class="res-topic-card"><span>sample pdb structures</span></h3>
+                      <h3>Jmol</h3>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8 py-2" id="structures">
+                      <div>
+                        
+                      </div>
+                      <div class="p-2 desc" id="s1">
+                  
+                        <div>
+                          <script>
+                            let a_myJmol = jmolApplet(500,"load resources/3f5c.pdb","0",);
+                            
+                            </script>
+                        </div>
+                        <div>
+                          <script>
+                            Jmol.jmolRadioGroup(a_myJmol, [
+                                                            ["spacefill off",  "off"],
+                                                            ["spacefill 23%",  "23%", "checked"],
+                                                            ["cartoon only",],
+                                                            ["spacefill 100%", "100%"]
+                                                          ]);
+                          </script>
+                          
+                          <span>&nbsp;&nbsp;</span>s
+                          <script type="text/javascript">Jmol.jmolCheckbox(a_myJmol, "spin on", "spin off", "spin",);</script>
+                          <span>&nbsp;&nbsp;</span>
+                          <script>Jmol.jmolButton(a_myJmol, "spacefill 23%", "Reset to original orientation");</script>
+                          <script type="text/javascript">
+                            Jmol.jmolMenu(myJmol,);</script>
+        
+                         
+                        </div>
+                        <div>
+                        </div>      
+                      </div>
+                    </div>
+                    <div class="col-4 py-2" id="structure_content">
+                      <div style="margin-top:100px;" id="d1">
+                        <p>
+                          <a href="#s1">Structure 1 (3f5c.pdb)</a>
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

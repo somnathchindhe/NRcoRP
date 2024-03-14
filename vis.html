@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="3Dmol-min.js"></script>
+<div id="container-01" class="mol-container"></div>
+<script src="jquery-3.6.0.min.js"></script>
+
+
+<style>
+    .mol-container {
+      width: 60%; /* 60% of the parent container's width */
+      padding-top: 40%; /* 40% of the parent container's width (3:2 ratio) */
+      position: relative;
+      margin: auto;
+    }
+</style>
+
+
+
+
+<script>
+        
+        let element = document.querySelector('#container-01');
+        let config = { backgroundColor: 'black' };
+
+        let viewer = $3Dmol.createViewer( element, config ); //set backgroundColor to white
+        let pdbUri = 'mod_3f5c.pdb'; //3d str visu
+        jQuery.ajax( pdbUri, {  
+     success: function(data) {
+      let v = viewer;
+      v.addModel( data, "pdb" );                       /* load data */
+      v.setStyle({}, {cartoon: {color: '#DCDCDC'}});
+      //v.setStyle({}, {cartoon: {color: 'spectrum'}});
+      viewer.setStyle({resi:'322'},{cartoon:{color:"red",thickness:10.0}}); 
+
+      //viewer.addSurface($3Dmol.SurfaceType.SAS, {opacity:0.95, color:'red'},{resi:['322','260']});
+      //viewer.addSurface($3Dmol.SurfaceType.SAS, {opacity:0.95, color:'red'},{resi:['322','260']});
+     // viewer.addSphere({resi:'322'}, {radius: 10.0, color: 'green' });
+
+      ///v.setStyle( {resi:'322'}, {Style:{color: 'red'}});0oi
+      viewer.addSphere({ center: { x: 96.199, y: 59.281, z: 77.446 }, radius: 2, color: 'yellow' })
+      viewer.addBox({ center: { x: 89.085, y: 59.529, z: 77.783 }, dimensions: { w: 3, h: 4, d: 2 }, color: 'red' })
+          
+      viewer.addSphere({ center: { x: 67.255, y: 36.456, z: 68.053 }, radius: 2, color: 'yellow' })
+      viewer.setStyle({resi:'344'},{cartoon:{color:"yellow",thickness:10.0}}); 
+      viewer.addLabel("K123", { position: { x: 67.255, y: 36.456, z: 68.053 }, backgroundColor: 0x800080, backgroundOpacity: 0.8 });
+
+      //viewer.setStyle({chain: 'A', resi: 42}, {stick: {}}); // Display sticks for the selected residues
+      //viewer.addSphere({resi: '322', atom: 'CA'}, {color: 'green', radius: 1.0}); /* style all atoms */
+      v.zoomTo();                                      /* set camera */
+      v.render({resi:['322','260']});                                      /* render scene */
+      v.zoom(1.2, 1000); 
+      //v.setStyle({367 : {chain:A}}, {cartoon: {color: 'spectrum'}});                      /* slight zoom */
+    },
+    error: function(hdr, status, err) {
+      console.error( "Failed to load PDB " + pdbUri + ": " + err );
+    },
+  });
+        
+</script>
+      
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive D3.js Tree Example</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        /* Add CSS styles here if needed */
+    </style>
+</head>
+<body>
+    <div id="tree-container"></div>
+
+    <script>
+        // Sample hierarchical data
+        var data = {
+            name: "Root",
+            children: [
+                { name: "Node 1", children: [{ name: "Leaf 1" }, { name: "Leaf 2" }] },
+                { name: "Node 2", children: [{ name: "Leaf 3" }, { name: "Leaf 4" }] }
+            ]
+        };
+
+        // Create a tree layout
+        var treeLayout = d3.tree().size([400, 300]);
+
+        // Generate the hierarchical tree structure
+        var rootNode = d3.hierarchy(data);
+        treeLayout(rootNode);
+
+        // Create an SVG container
+        var svg = d3.select("#tree-container").append("svg")
+            .attr("width", 500)
+            .attr("height", 400)
+            .append("g")
+            .attr("transform", "translate(50, 50)");
+
+        // Create links
+        var links = svg.selectAll(".link")
+            .data(rootNode.links())
+            .enter().append("path")
+            .attr("class", "link")
+            .attr("d", d3.linkHorizontal()
+                .x(d => d.y)
+                .y(d => d.x));
+
+        // Create nodes
+        var nodes = svg.selectAll(".node")
+            .data(rootNode.descendants())
+            .enter().append("g")
+            .attr("class", "node")
+            .attr("transform", d => `translate(${d.y},${d.x})`)
+            .on("click", toggleChildren); // Add click event
+
+        nodes.append("circle")
+            .attr("r", 5);
+
+        nodes.append("text")
+            .attr("dy", 3)
+            .attr("x", d => d.children ? -8 : 8)
+            .style("text-anchor", d => d.children ? "end" : "start")
+            .text(d => d.data.name);
+
+        function toggleChildren(d) {
+            if (d.children) {
+                d._children = d.children;
+                d.children = null;
+            } else {
+                d.children = d._children;
+                d._children = null;
+            }
+            update(rootNode);
+        }
+
+        function update(source) {
+            // Update tree layout
+            treeLayout(rootNode);
+
+            // Update links
+            links = svg.selectAll(".link")
+                .data(rootNode.links(), d => d.target.id);
+
+            links.exit().remove();
+
+            links.enter().append("path")
+                .attr("class", "link")
+                .attr("d", d3.linkHorizontal()
+                    .x(d => d.y)
+                    .y(d => d.x));
+
+            // Update nodes
+            nodes = svg.selectAll(".node")
+                .data(rootNode.descendants(), d => d.id);
+
+            nodes.exit().remove();
+
+            nodes.enter().append("g")
+                .attr("class", "node")
+                .attr("transform", d => `translate(${source.y},${source.x})`)
+                .on("click", toggleChildren); // Add click
+
+            nodes.enter().append("g")
+                .attr("class", "node")
+                .attr("transform", d => `translate(${source.y},${source.x})`)
+                .on("click", toggleChildren); // Add click event
+
+            nodes.append("circle")
+                .attr("r", 5);
+
+            nodes.append("text")
+                .attr("dy", 3)
+                .attr("x", d => d.children ? -8 : 8)
+                .style("text-anchor", d => d.children ? "end" : "start")
+                .text(d => d.data.name);
+
+            // Transition nodes to their new positions
+            nodes.transition()
+                .duration(750)
+                .attr("transform", d => `translate(${d.y},${d.x})`);
+
+            // Transition exiting nodes to the parent's new position
+            nodes.exit().transition()
+                .duration(750)
+                .attr("transform", d => `translate(${source.y},${source.x})`)
+                .remove();
+        }
+    </script>
+</body>
+</html>

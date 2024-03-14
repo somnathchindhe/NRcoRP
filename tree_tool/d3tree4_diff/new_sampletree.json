@@ -1,0 +1,201 @@
+{
+  "name": "Nuclear Receptors",
+  "children": [
+    {
+      "name": "Adopted orphan receptor",
+      "children": [
+        {
+          "name": "FXR",
+          "children": [
+            { "name": "FXR" },
+            { "name": "PXR" }
+          ]
+        },
+        {
+          "name": "LXR",
+          "children": [
+            { "name": "LXRɑ" },
+            { "name": "LXRβ" }
+          ]
+        },
+        {
+          "name": "PPAR",
+          "children": [
+            { "name": "PPARɑ" },
+            { "name": "PPARy" },
+            { "name": "PPARy1" },
+            { "name": "PPARy2" },
+            { "name": "PPARβ/δ" }
+          ]
+        },
+        {
+          "name": "Rev-erb",
+          "children": [
+            { "name": "Rev-erbɑ" },
+            { "name": "Rev-erbβ" }
+          ]
+        },
+        {
+          "name": "RXR",
+          "children": [
+            { "name": "RXRɑ" },
+            { "name": "RXRy" },
+            { "name": "RXRβ" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ENDOCRINE RECEPTOR",
+      "children": [
+        {
+          "name": "AR"
+        },
+        {
+          "name": "ER",
+          "children": [
+            { "name": "ERɑ" },
+            { "name": "ERβ" }
+          ]
+        },
+        {
+          "name": "GR"
+        },
+        {
+          "name": "MR"
+        },
+        {
+          "name": "PGR",
+          "children": [
+            { "name": "PR-B" }
+          ]
+        },
+        {
+          "name": "RAR",
+          "children": [
+            { "name": "RARɑ" }
+          ]
+        },
+        {
+          "name": "THR",
+          "children": [
+            { "name": "TR-α1" },
+            { "name": "TR-α2" },
+            { "name": "TR-β" },
+            { "name": "TR-β1" }
+          ]
+        },
+        {
+          "name": "VDR"
+        }
+      ]
+    },
+    {
+      "name": "ORPHAN Nuclear Receptor",
+      "children": [
+        {
+          "name": "COUP",
+          "children": [
+            { "name": "COUP-TFI" },
+            { "name": "COUP-TFII" }
+          ]
+        },
+        {
+          "name": "DAX",
+          "children": [
+            { "name": "DAX-1" }
+          ]
+        },
+        {
+          "name": "EAR",
+          "children": [
+            { "name": "EAR-2" }
+          ]
+        },
+        {
+          "name": "ERR",
+          "children": [
+            { "name": "ERRɑ" },
+            { "name": "ERRɑ-1" }
+          ]
+        },
+        {
+          "name": "GCNF"
+        },
+        {
+          "name": "HNF",
+          "children": [
+            { "name": "HNF4ɑ" },
+            { "name": "HNF4ɑ" }
+          ]
+        },
+        {
+          "name": "LRH-1",
+          "children": [
+            { "name": "LRH-1" }
+          ]
+        },
+        {
+          "name": "NGF1B/NUR77",
+          "children": [
+            { "name": "NGF1B/NUR77" }
+          ]
+        },
+        {
+          "name": "NOR1",
+          "children": [
+            { "name": "NOR1" }
+          ]
+        },
+        {
+          "name": "NURR1",
+          "children": [
+            { "name": "NURR1" }
+          ]
+        },
+        {
+          "name": "PNR",
+          "children": [
+            { "name": "PNR" }
+          ]
+        },
+        {
+          "name": "ROR",
+          "children": [
+            { "name": "ROR-ɑ" },
+            { "name": "ROR-ɑ1" },
+            { "name": "ROR-ɑ4" },
+            { "name": "RORy" },
+            { "name": "RORyt" },
+            { "name": "ROR-β" }
+          ]
+        },
+        {
+          "name": "SF1",
+          "children": [
+            { "name": "SF1" }
+          ]
+        },
+        {
+          "name": "SHP",
+          "children": [
+            { "name": "SHP" }
+          ]
+        },
+        {
+          "name": "TLX",
+          "children": [
+            { "name": "TLX" }
+          ]
+        },
+        {
+          "name": "TR",
+          "children": [
+            { "name": "TR2" },
+            { "name": "TR4" }
+          ]
+        }
+      ]
+    }
+  ]
+}

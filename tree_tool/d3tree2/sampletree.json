@@ -1,0 +1,65 @@
+{
+  "name": "Nuclear Receptors",
+  "children": [
+    {
+      "name": "ENDOCRINE RECEPTOR",
+      "children": [
+        {
+          "name": "THR",
+          "children": [
+            {
+              "name": "TR-α1",
+              "value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Adopted orphan receptor",
+      "children": [
+        {
+          "name": "Rev-erb",
+          "children": [
+            {
+              "name": "Rev-erbɑ",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "LXR",
+          "children": [
+            {
+              "name": "LXRɑ",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ORPHAN N.R",
+      "children": [
+        {
+          "name": "LRH-1",
+          "children": [
+            {
+              "name": "LRH-1",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "HNF",
+          "children": [
+            {
+              "name": "HNF4ɑ",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

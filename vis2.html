@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>3Dmol.js Viewer</title>
+    <script src="https://3Dmol.org/build/3Dmol-min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .mol-container {
+            width: 60%; /* 60% of the parent container's width */
+            padding-top: 40%; /* 40% of the parent container's width (3:2 ratio) */
+            position: relative;
+            margin: auto;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container-01" class="mol-container"></div>
+
+    <script>
+        let element = document.querySelector('#container-01');
+        let config = { backgroundColor: 'black' };
+
+        let viewer = $3Dmol.createViewer(element, config);
+        let pdbUri = 'mod_3f5c.pdb';
+
+        jQuery.ajax(pdbUri, {
+            success: function (data) {
+                let v = viewer;
+                v.addModel(data, "pdb");
+                v.setStyle({}, { cartoon: { color: '#DCDCDC' } });
+                viewer.setStyle({ resi: '322' }, { cartoon: { color: "red", thickness: 10.0 } });
+                viewer.addSphere({ center: { x: 96.199, y: 59.281, z: 77.446 }, radius: 2, color: 'yellow' });
+                viewer.addBox({ center: { x: 89.085, y: 59.529, z: 77.783 }, dimensions: { w: 3, h: 4, d: 2 }, color: 'red' });
+                viewer.addSphere({ center: { x: 67.255, y: 36.456, z: 68.053 }, radius: 2, color: 'yellow' });
+                viewer.setStyle({ resi: '344' }, { cartoon: { color: "yellow", thickness: 10.0 } });
+                viewer.addLabel("Glutamate", { position: { x: 67.255, y: 36.456, z: 68.053 }, backgroundColor: 0x800080, backgroundOpacity: 0.8 });
+               
+    
+    viewer.render();
+}
+                viewer.addEventListener("click", function (event) {
+            var atom = event.target;
+            if (atom.resi) {
+                showResidueNumber(atom, viewer);
+                }
+});
+                v.zoomTo();
+                v.render({ resi: ['322', '260'] });
+                v.zoom(1.2, 1000);
+                v.click()
+                
+            },
+            error: function (hdr, status, err) {
+                console.error("Failed to load PDB " + pdbUri + ": " + err);
+            },
+        });
+    function showResidueNumber(atom, viewer) {
+    var resi = atom.resi;
+    var labelOptions = {
+        fontSize: 12,
+        fontColor: 'white',
+        backgroundColor: 'black',
+        border: '1px solid white',
+        borderRadius: '3px',
+        padding: '3px',
+    };
+
+    viewer.addLabel(resi, {
+        position: atom,
+        inFront: true,
+    }, labelOptions);
+    
+    viewer.render();
+}
+
+    </script>
+
+    <div class="footer">
+        <button id="addStyle" onclick="addSelection('style')">Add Style</button>
+        <button id="addSurface" onclick="addSelection('labelres')">Add LabelRes</button>
+        <button id="savePng" onclick="savePng();">Save PNG</button>
+        <button onclick="center();" id="centerModel">Center</button>
+        <button onclick="vrml();" id="vrmlExport">VRML</button>
+    </div>
+</body>
+
+</html>

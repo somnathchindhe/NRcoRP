@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Add CSS styles here if needed */
+    </style>
+</head>
+<body>
+    <div id="tree-container"></div>
+
+    <script src="d3.v6.min.js"></script>
+    <script>
+        // Your JSON data
+        var jsonData = {
+            "ENDOCRINE RECEPTOR": {
+                "THR": [
+                    "TR-α1",
+                    "TR-α1",
+                    "TR-α1"
+                ]
+            },
+            "Adopted orphan receptor": {
+                "Rev-erb": [
+                    "Rev-erbɑ"
+                ],
+                "LXR": [
+                    "LXRɑ"
+                ]
+            },
+            "ORPHAN N.R": {
+                "LRH-1": [
+                    "LRH-1"
+                ],
+                "HNF": [
+                    "HNF4ɑ"
+                ]
+            }
+        };
+
+        // Set up D3.js hierarchy
+        var root = d3.hierarchy(jsonData);
+
+        // Set up D3.js tree layout
+        var treeLayout = d3.tree().size([600, 400]);
+        treeLayout(root);
+
+        // Create an SVG container
+        var svg = d3.select("#tree-container").append("svg")
+            .attr("width", 800)
+            .attr("height", 600)
+            .append("g")
+            .attr("transform", "translate(50, 50)");
+
+        // Create links
+        var links = svg.selectAll(".link")
+            .data(root.links())
+            .enter().append("path")
+            .attr("class", "link")
+            .attr("d", d3.linkHorizontal()
+                .x(d => d.y)
+                .y(d => d.x));
+
+        // Create nodes
+        var nodes = svg.selectAll(".node")
+            .data(root.descendants())
+            .enter().append("g")
+            .attr("class", "node")
+            .attr("transform", d => `translate(${d.y},${d.x})`);
+
+        nodes.append("circle")
+            .attr("r", 5);
+
+        nodes.append("text")
+            .attr("dy", 3)
+            .attr("x", d => d.children ? -8 : 8)
+            .style("text-anchor", d => d.children ? "end" : "start")
+            .text(d => d.data.name);
+
+    </script>
+</body>
+</html>
